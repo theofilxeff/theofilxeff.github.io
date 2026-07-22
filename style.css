@@ -119,6 +119,7 @@ h1 em, h2 em { font-weight: 400; }
 .problems { padding: 115px 0 140px; }
 
 .problem-card { display: grid; grid-template-columns: .62fr 1.38fr; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.problem-card + .problem-card { margin-top: 80px; }
 .problem-index { padding: 45px 25px 45px 0; font: 400 clamp(90px, 13vw, 180px)/.8 "Instrument Serif", serif; color: transparent; -webkit-text-stroke: 1px var(--ink); }
 .problem-main { padding: 45px 0 45px 45px; border-left: 1px solid var(--line); }
 .tags { display: flex; gap: 8px; margin-bottom: 70px; }
@@ -131,6 +132,9 @@ h1 em, h2 em { font-weight: 400; }
 .pdf-link { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; max-width: 610px; padding: 18px; border: 1px solid var(--ink); text-decoration: none; transition: background .2s; }
 .pdf-link:hover { background: #e7e5dd; }
 .pdf-icon { display: grid; place-items: center; width: 45px; height: 54px; background: var(--ink); color: var(--paper); font: 500 9px/1 "DM Mono", monospace; }
+.proof-links { display: grid; gap: 12px; max-width: 610px; }
+.proof-links .pdf-link { width: 100%; }
+.code-icon { font-size: 8px; }
 .pdf-link strong, .pdf-link small { display: block; }
 .pdf-link strong { font-size: 14px; font-weight: 600; }
 .pdf-link small { margin-top: 5px; color: var(--muted); font-size: 11px; }
